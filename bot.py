@@ -33,17 +33,12 @@ async def texf(client, message):
            userid = str(message.chat.id)
            if not os.path.isdir(f"./DOWNLOADS/{userid}"):
               os.makedirs(f"./DOWNLOADS/{userid}") 
-           await client.send_message(
-           chat_id=message.chat.id,
-           text="**Plz enter an language code\n suppourt languages**<a href = 'https://www.google.com/url?sa=t&source=web&rct=j&url=https://cloud.google.com/text-to-speech/docs/voices&ved=2ahUKEwir4pPLlr7uAhWLwjgGHQAVAQAQFjACegQIDBAC&usg=AOvVaw3Q_9UBb0Xo-ljg87RGPX-8&cshid=1611821833928 '>click here</a>",
-           reply_markup=ForceReply(True),
-           reply_to_message_id=message.message_id
-        )
 
-           language = await client.listen(
-            message.chat.id,
-            timeout=60
-        )
+           language = await client.ask(
+           message.chat.id,
+           "**Plz enter an language code\n suppourt languages**<a href = 'https://www.google.com/url?sa=t&source=web&rct=j&url=https://cloud.google.com/text-to-speech/docs/voices&ved=2ahUKEwir4pPLlr7uAhWLwjgGHQAVAQAQFjACegQIDBAC&usg=AOvVaw3Q_9UBb0Xo-ljg87RGPX-8&cshid=1611821833928 '>click here</a>",
+           reply_markup=ForceReply(True),
+        )  
 
            language_to_audio = language.text.lower()
            if language.text.lower() not in tts_langs():
