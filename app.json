@@ -1,0 +1,44 @@
+{
+    "name": "Text to speech Bot",
+    "description": "A bot can convert text to speech",
+    "logo": "https://telegra.ph/file/71aaa621508cd696ab538.jpg",
+    "keywords": [
+        "text",
+        "speech",
+        "Telegram Bot",
+        "jack"
+    ],
+    "website": "https://TroJanzHEX.me",
+    "repository": "https://github.com/TroJanzHEX/https://github.com/unknownkidnapper/TTS-BOT",
+    "success_url": "https://telegram.dog/TroJanzHEX",
+    "env": {
+        "TG_BOT_TOKEN": {
+            "description": "You Telegram Bot Token from @BotFather",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "Your APP ID from my.telegram.org",
+            "value": ""
+        },
+        "WEBHOOK": {
+            "description": "Set this Value to 'ANYTHING'. Don't Change it",
+            "value": "ANYTHING"
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
