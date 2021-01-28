@@ -1,0 +1,4 @@
+gTTS
+tgcrypto
+pyrogram
+pyromod
