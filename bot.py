@@ -36,7 +36,7 @@ async def texf(client, message):
 
            language = await client.ask(
            message.chat.id,
-           "**Plz enter an language code\n suppourt languages**<a href = 'https://www.google.com/url?sa=t&source=web&rct=j&url=https://cloud.google.com/text-to-speech/docs/voices&ved=2ahUKEwir4pPLlr7uAhWLwjgGHQAVAQAQFjACegQIDBAC&usg=AOvVaw3Q_9UBb0Xo-ljg87RGPX-8&cshid=1611821833928 '>click here</a>",
+           "**Plz enter an language code\n suppourt languages**[click here](https://www.google.com/url?sa=t&source=web&rct=j&url=https://cloud.google.com/text-to-speech/docs/voices&ved=2ahUKEwir4pPLlr7uAhWLwjgGHQAVAQAQFjACegQIDBAC&usg=AOvVaw3Q_9UBb0Xo-ljg87RGPX-8&cshid=1611821833928)",
            reply_markup=ForceReply(True),
         )  
 
