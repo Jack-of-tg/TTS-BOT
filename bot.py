@@ -91,7 +91,7 @@ async def lang(client, message):
 async def start(client, message):
     await message.reply_text(
     text=f"""**Hi {message.from_user.first_name},
-    This is s simple Text To speech bot. Every message other than commands will be treated as my job and I'll speak it.**""")
+An simple Text To speech bot**""")
 
 
 @tts.on_message(filters.text & ~filters.reply)
