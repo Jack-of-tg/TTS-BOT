@@ -102,7 +102,7 @@ async def texf(client, message):
 
         language = await client.ask(
         message.chat.id,
-        "**Plz enter the language code.\nTo see supported languages with thier code, use /lang",
+        "**Plz enter the language code.\nTo see supported languages with thier code**,use /lang",
         reply_markup=ForceReply(True),
         )  
 
