@@ -6,6 +6,7 @@ from pyrogram.types import ForceReply
 from gtts import gTTS
 from gtts.lang import tts_langs
 
+
 if bool(os.environ.get("WEBHOOK", False)): 
     from sample_config import Config
 else:
@@ -18,7 +19,8 @@ tts = Client(
     bot_token=Config.TG_BOT_TOKEN,
 )
 
-languages =   '''"af" for >> "Afrikaans",
+languages = '''\
+    "af" for >> "Afrikaans",
     "ar" for >> "Arabic",
     "bn" for >> "Bengali",
     "bs" for >> "Bosnian",
@@ -83,14 +85,15 @@ languages =   '''"af" for >> "Afrikaans",
 @tts.on_message(filters.command(["lang"]))
 async def lang(client, message):
     await message.reply_text(
-    text=f"Available languages and codes for them  :- \n {languages}")
-
+        text=f"Available languages and codes for them  :- \n {languages}"
+    )
 
 
 @tts.on_message(filters.command(["start"]))
 async def start(client, message):
     await message.reply_text(
-        text=f"**Hi {message.from_user.mention}, I am a simple text to speech bot**")
+        text=f"**Hi {message.from_user.mention}, I am a simple text to speech bot**"
+    )
 
 
 @tts.on_message(filters.text & ~filters.reply)
@@ -123,5 +126,6 @@ async def texf(client, message):
     myobj.save(new_file)
     await message.reply_audio(new_file)
     await a.edit("**Thanks for using me.**")
+
 
 tts.run()
