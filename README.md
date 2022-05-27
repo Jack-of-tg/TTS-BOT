@@ -7,7 +7,7 @@
 
 ### Deploy in your vps
 ```sh
-git clone https://github.com/unknownkidnapper/TTS-BOT
+git clone https://github.com/Jack-of-tg/TTS-BOT.git
 cd TTS-BOT
 pip3 install -r requirements.txt
 # <Create config.py appropriately>
