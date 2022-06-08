@@ -7,7 +7,7 @@
 
 ### Deploy in your vps
 ```sh
-git clone https://github.com/unknownkidnapper/TTS-BOT
+git clone https://github.com/Jack-of-tg/TTS-BOT.git
 cd TTS-BOT
 pip3 install -r requirements.txt
 # <Create config.py appropriately>
@@ -16,11 +16,10 @@ python3 bot.py
 
 ## Configs
 
-* TG_BOT_TOKEN  - Get bot token from @BotFather
-* APP_ID        - From my.telegram.org (or @UseTGXBot)
-* API_HASH      - From my.telegram.org (or @UseTGXBot)
+* `TG_BOT_TOKEN`  - Get bot token from @BotFather
+* `APP_ID`        - From my.telegram.org (or @UseTGXBot)
+* `API_HASH`      - From my.telegram.org (or @UseTGXBot)
 
-CREDITS
-
+## Credits
 
 * [Dan](https://telegram.dog/haskell) for his [Pyrogram Library](https://github.com/pyrogram/pyrogram)
